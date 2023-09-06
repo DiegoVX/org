@@ -1,7 +1,10 @@
-const Texto = () => {
-    return <div>
+import "./Texto.css"
+
+const Texto = (datosExternos) => {
+    console.log("Datos: ", datosExternos);
+    return <div className = "campo-texto">
         <label>Nombre</label>
-        <input></input>
+        <input placeholder = "Ingresar nombre"/>
     </div>
 };
 
